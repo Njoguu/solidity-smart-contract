@@ -24,4 +24,24 @@ contract MyContract{
 	function setString(string memory value) public{
 		sayhello = value;
 	}
+
+	//	3. LOOPS
+	// starting a loop
+	function loop(uint n) public pure{
+		uint sum = 0;
+		// for loop
+		for (uint x; x < n; x++){
+			sum += x;
+		}
+
+		// while loop
+		uint x = 0;
+		while (x < n) {
+			sum += x;
+			x++;
+
+		}
+
+	}
+
 }
