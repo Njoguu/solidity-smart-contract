@@ -15,4 +15,13 @@ contract MyContract{
 	function getLength() external view returns (uint){
 		arr.length;
 	}
+
+	//	2. STRINGS
+	// creating a string
+	string public sayhello  = "hello world";
+
+	// function to set string
+	function setString(string memory value) public{
+		sayhello = value;
+	}
 }
